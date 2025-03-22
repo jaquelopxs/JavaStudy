@@ -1,0 +1,6 @@
+else if (comando.equals("←")) {
+    String text = display.getText();
+    if (text.length() > 0) {
+        display.setText(text.substring(0, text.length() - 1));
+    }
+}
