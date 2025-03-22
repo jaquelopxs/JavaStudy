@@ -1,0 +1,7 @@
+addKeyListener(new KeyAdapter() {
+    @Override
+    public void keyPressed(KeyEvent e) {
+        String tecla = KeyEvent.getKeyText(e.getKeyCode());
+        actionPerformed(new ActionEvent(e.getSource(), e.getID(), tecla));
+    }
+});
