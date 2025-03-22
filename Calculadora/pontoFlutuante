@@ -1,0 +1,8 @@
+} else if (comando.equals(".")) {
+    if (novoNumero) {
+        display.setText("0.");
+        novoNumero = false;
+    } else if (!display.getText().contains(".")) {
+        display.setText(display.getText() + ".");
+    }
+}
